@@ -36,12 +36,13 @@ const styles = StyleSheet.create({
         marginTop: 12,
         padding: 8,
         borderRadius: 4
+     },
+     textologin:{
+         fontSize: 18,
+         color: "white",
+         textAlign: 'center',
+        paddingBottom: "20px"
      }
-    //, texto:{
-    //     fontSize: 18,
-    //     color: "white",
-    //     textAlign: 'center'
-    // }
 })
 
 export default styles;
