@@ -1,9 +1,9 @@
-import React from 'react';
+mport React from 'react';
 import { Text, View, TextInput, Button, TouchableOpacity, ImageBackground, Alert } from 'react-native';
 
 
 import styles from './style';
-// import Fundo from '../../assets/fundo.jpg';
+ import Fundo from '../../assets/fundo.jpg';
 
 const apiUsuario = {
     id: 1,
@@ -13,7 +13,7 @@ const apiUsuario = {
 
  function Login({ navigation }) {
     function autenticacao(){   
-        if (apiUsuario.email === usuario) {
+        if (apiUsuario.email === usuario && apiUsuario.senha === usuario) {
             Alert.alert("Usuario válido")
             navigation.navigate("Home");
         }else {
@@ -25,7 +25,7 @@ const apiUsuario = {
 
         return (
             <View style={styles.caixa}>
-            {/* <ImageBackground source={Fundo} style={styles.fundo}> */}
+             <ImageBackground source={Fundo} style={styles.fundo}>
 
                 <View>
                     <Text style={styles.titulo}>Login</Text>
@@ -48,11 +48,11 @@ const apiUsuario = {
 
                 </View>
                 
-            {/* </ImageBackground> */}
+            <Text style={styles.textologin}>OU ENTÃO ENTRE COMO VISITANTE</Text>
             <Button
-            title="Home"
+            title="Visitante"
             onPress={ () => navigation.navigate('Home')} />
-
+            </ImageBackground>
         </View>
     )
     }
