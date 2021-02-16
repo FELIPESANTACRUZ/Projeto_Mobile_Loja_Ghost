@@ -1,5 +1,5 @@
 import React from 'react';
-import { Text, View, TextInput, Button, TouchableOpacity, ImageBackground } from 'react-native';
+import { Text, View, TextInput, Button, TouchableOpacity, ImageBackground, Alert } from 'react-native';
 
 
 import styles from './style';
@@ -15,7 +15,7 @@ const apiUsuario = {
     function autenticacao(){   
         if (apiUsuario.email === usuario) {
             Alert.alert("Usuario válido")
-            navigation.navigate("tarefas");
+            navigation.navigate("Home");
         }else {
             Alert.alert("usuario inválido", "Este usuário não existe!")
         }
