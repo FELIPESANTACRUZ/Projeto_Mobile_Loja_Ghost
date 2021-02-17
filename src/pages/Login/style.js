@@ -15,7 +15,8 @@ const styles = StyleSheet.create({
         width: "100%",
         height: "100%",
         justifyContent: 'center',
-        alignItems: 'center'
+        alignItems: 'center',
+        resizeMode:'contain'
     },
     titulo: {
         color: "white",
@@ -32,16 +33,17 @@ const styles = StyleSheet.create({
         marginTop: 12
     },
     btn:{
-        backgroundColor: "#6A5ACD",
+        backgroundColor: "#4A235A",
         marginTop: 12,
         padding: 8,
         borderRadius: 4
+     },
+     textologin:{
+         fontSize: 18,
+         color: "white",
+         textAlign: 'center',
+        paddingBottom: "20px"
      }
-    //, texto:{
-    //     fontSize: 18,
-    //     color: "white",
-    //     textAlign: 'center'
-    // }
 })
 
 export default styles;
